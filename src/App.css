@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0d1117, #111827, #1e3a8a);
+  background-attachment: fixed;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
+.home-container {
+  text-align: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px #58a6ff);
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin: 10px 0;
+  color: #58a6ff;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #cbd5e1;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 200px;
+  height: 150px;
+  background-color: rgba(22, 27, 34, 0.8);
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e6edf3;
+}
+
+.card.blue { border: 2px solid #2563eb; }
+.card.green { border: 2px solid #059669; }
+.card.yellow { border: 2px solid #ca8a04; }
+.card.orange { border: 2px solid #f97316; }
+.card.purple { border: 2px solid #7c3aed; }
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
